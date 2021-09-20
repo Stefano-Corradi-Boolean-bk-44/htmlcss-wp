@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-weight: 200;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: #949494;
+    font-weight: 100;
+}
+
+a:hover, a:active{
+    color: darkred;
+}
+
+/* utility */
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.overlay{
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+
+/* gestiokne di tutti i box immagine*/
+.img-box{
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+}
+/************/
+
+/* HEADER */
+.header-top{
+    margin-bottom: 15px;
+}
+
+#logo img{
+    width: 180px;
+    padding-right: 20px;
+    border-right: 1px solid lightgrey;
+}
+
+.header-top nav ul{
+    list-style: none;
+    margin: 30px 0;
+}
+
+.header-top nav ul li{
+    display: inline-block;
+}
+.header-top nav ul li a{
+    padding-right: 20px;
+} 
+
+.jumbotron{
+    height: 500px;
+    margin-bottom: 15px;
+    background-image: url('../img/banner.jpg');
+}
+
+.jumbotron .text{
+    color: white;
+    width: 50%;
+    /* il padding in % è sempre in relazione alla larghezza */
+    padding: 20% 0 10% 50px;
+}
+.jumbotron .text h3{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* MAIN */
+main{
+    padding-bottom: 15px;
+}
+
+.main-top{
+    height: 70px;
+    margin-bottom: 15px;
+}
+.main-top h2{
+    font-size: 40px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content .img{
+    height: 200px;
+}
+
+.content .text-area h4{
+    color: black;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.left-col .img{
+    background-image: url('../img/img-1.jpg');
+}
+.right-col .img{
+    background-image: url('../img/img-2.jpg');
+}
+.center-col .img{
+    background-image: url('../img/banner-2.jpg');
+}
+
+
+.left-col, .center-col, .right-col{
+    float: left;
+    min-height: 500px;
+}
+
+.left-col, .right-col{
+    width: 20%;
+}
+.center-col{
+    width: 56%;
+    margin: 0 2%;
+}
+
+/* FOOTER */
+.footer-content{
+    height: 50px;
+    margin: 15px 0;
+    color: black;
+    text-align: center;
+    font-weight: 100;
+}
+
+.footer-content::after{
+    content: '\2764';
+    color: red;
+    padding-left: 5px;
+}
